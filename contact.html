@@ -298,7 +298,7 @@
     .glass-card {
       position: relative;
       width: min(100%, 470px);
-      aspect-ratio: 0.98;
+      min-height: 520px;
       border-radius: 34px;
       overflow: hidden;
       background:
@@ -323,17 +323,17 @@
         radial-gradient(circle at top, rgba(119,197,255,0.12), transparent 48%);
       display: grid;
       place-items: center;
-      padding: 30px;
+      padding: 34px 28px 38px;
       overflow: hidden;
     }
 
     .logo-stage {
       position: relative;
       z-index: 1;
-      width: min(100%, 400px);
+      width: min(100%, 360px);
       text-align: center;
       display: grid;
-      gap: 16px;
+      gap: 12px;
       justify-items: center;
     }
 
@@ -357,16 +357,9 @@
     .logo-caption {
       color: #fff;
       font-family: var(--serif);
-      font-size: clamp(1.3rem, 2vw, 1.8rem);
-      line-height: 1.08;
-    }
-
-    .logo-stage p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.65;
-      font-size: 0.95rem;
-      max-width: 32ch;
+      font-size: clamp(1.05rem, 1.55vw, 1.45rem);
+      line-height: 1.18;
+      max-width: 18ch;
     }
 
     .base {
@@ -925,9 +918,6 @@
                 <img src="assets/tgl-logo.png" alt="The Guiding Light USA logo" />
               </div>
               <div class="logo-caption">Light in the darkness. Hope in action.</div>
-              <p>
-                A modern home for a ministry rooted in prayer, worship, and bold outreach.
-              </p>
             </div>
           </div>
         </div>
