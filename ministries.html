@@ -783,8 +783,27 @@
         grid-template-columns: 1fr;
       }
 
+      .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
       .hero-visual {
-        min-height: 560px;
+        order: -1;
+        min-height: auto;
+        width: 100%;
+        justify-content: flex-end;
+        align-self: flex-end;
+      }
+
+      .glass-card {
+        width: min(100%, 380px);
+        min-height: 380px;
+      }
+
+      .logo-stage {
+        width: min(100%, 300px);
       }
 
       .about-main,
@@ -827,7 +846,12 @@
       }
 
       .glass-card {
-        aspect-ratio: 0.82;
+        width: min(100%, 320px);
+        min-height: 320px;
+      }
+
+      .logo-caption {
+        max-width: 16ch;
       }
 
       .step {
